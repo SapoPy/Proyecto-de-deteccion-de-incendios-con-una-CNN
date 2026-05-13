@@ -9,7 +9,7 @@ import torchvision
 from matplotlib import pyplot as plt
 
 from utils import *
-from fireyecnn import *
+from Modelos.fireyecnn import *
 
 from dataset import *
 
