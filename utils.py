@@ -98,7 +98,7 @@ def train_model(
 
     # Definición de dataloader
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=0, pin_memory=use_gpu)
-    val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=len(val_dataset), shuffle=False, pin_memory=use_gpu)
+    val_loader = torch.utils.data.DataLoader(val_dataset, batch_size=32, shuffle=False, pin_memory=use_gpu)
 
     # Optimizador
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
