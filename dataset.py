@@ -96,8 +96,8 @@ MEAN_DATASET = [0.4414869,  0.41371821, 0.38738546]
 STD_DATASET = [0.29328358, 0.29236583, 0.30662562]
 
 transform_fireeye = transforms.Compose([
-    transforms.Resize(512),        # lado más corto → 512
-    transforms.CenterCrop((256, 512)),
+    transforms.Resize(400),
+    transforms.CenterCrop((400, 225)),
     transforms.ToTensor(),
     transforms.Normalize(
         mean=MEAN_DATASET,
